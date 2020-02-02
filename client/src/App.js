@@ -1,21 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+
+import ListReports from './containers/ListReports';
+import ViewReport from './containers/ViewReport';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <ListReports />
+          </Route>
+          <Route path="/report/:id">
+            <ViewReport />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
