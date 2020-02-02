@@ -1,14 +1,16 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
-import ListReports from './containers/ListReports';
-import ViewReport from './containers/ViewReport';
+import Header from './components/Header';
+import ListReports from './components/ListReport';
+import ViewReport from './components/ViewReport';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Router>
         <Switch>
           <Route exact path="/">
