@@ -41,7 +41,7 @@ export default () => {
         <div>{report.address.address_line1}, {report.address.city}</div>
         <div>{report.description.subtype} - {report.description.type} </div>
         <div>{report.fire_department.name}</div>
-        <div>Weather: {report.weather.currently.summary}</div>
+        <div>Weather: {report.weather && report.weather.currently.summary}</div>
         </div>
       ))}
     </div>

@@ -6,7 +6,7 @@ Getting Started
     ```
     APP_NAME=fire-reports
     SERVER_PORT=8080
-    DARK_SKY_SECRET=YOUR_KEY
+    DARK_SKY_SECRET=YOUR_KEY_HERE
     ```
  - Open seperate terminal window
  - Change directory to `server`
@@ -14,6 +14,11 @@ Getting Started
  - Run `yarn start`
 
 ## Client:
+ - Create `/client/.env` with the following contents:
+    ```
+    REACT_APP_SERVER_URL=http://localhost:8080
+    REACT_APP_MAPBOX_TOKEN=YOUR_KEY_HERE
+    ```
  - Open seperate terminal window
  - Change directory to `client`
  - Run `yarn install`
