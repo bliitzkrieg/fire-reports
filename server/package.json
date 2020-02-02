@@ -4,7 +4,7 @@
   "description": "server for fire-reports",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js localhost 8080"
+    "start": "nodemon ./index.js"
   },
   "author": "lucamatthewdecaprio@gmail.com",
   "dependencies": {

@@ -5,5 +5,3 @@ exports.fetchAllReports = (req, res) => {
 exports.fetchReport = (req, res) => {
   return res.send('NYI - Fetch Individual report');
 };
-
-

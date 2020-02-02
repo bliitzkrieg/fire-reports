@@ -1,3 +1,18 @@
+Getting Started
+==========
+
+## Server
+ - Open seperate terminal window
+ - Change directory to `server`
+ - Run `yarn install`
+ - Run `yarn start`
+
+## Client:
+ - Open seperate terminal window
+ - Change directory to `client`
+ - Run `yarn install`
+ - Run `yarn start`
+
 Background
 ==========
 Enrich 911 emergency incident data to provide better analytics for a fire department.
