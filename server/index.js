@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const config = require('./config');
+require('dotenv').config();
 
-const { fetchAllReports, fetchReport } = require('./routes/reports');
+const { fetchAllReports, fetchReport } = require('./controllers/reports');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -14,7 +14,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get('/reports', fetchAllReports);
 app.get('/report/:id', fetchReport);
+app.get('/reports', fetchAllReports);
 
-app.listen(config.serverPort, () => console.log(`${config.appName} running on http://localhost:${config.serverPort}/`));
+app.listen(process.env.SERVER_PORT, () => console.log(`${process.env.APP_NAME} running on http://localhost:${process.env.SERVER_PORT}/`));

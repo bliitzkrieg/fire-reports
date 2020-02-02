@@ -2,6 +2,12 @@ Getting Started
 ==========
 
 ## Server
+ - Create `/server/.env` with following contents:
+    ```
+    APP_NAME=fire-reports
+    SERVER_PORT=8080
+    DARK_SKY_SECRET=YOUR_KEY
+    ```
  - Open seperate terminal window
  - Change directory to `server`
  - Run `yarn install`
