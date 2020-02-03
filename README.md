@@ -26,7 +26,7 @@ Getting Started
 
 > What improvements would you make or best practices would you utilize if you had double the time?
 
-If I had double the time I would have added Jest tests on both the client and server, improved the CSS styles and handled errors a bit more elegantly on the server with an error handling middleware.
+If I had double the time I would have added Jest tests on both the client and server, improved the CSS styles and handled errors a bit more elegantly on the server with an error handling middleware. I went with express for time-sake but in a bigger app I would have chosen to use [NestJS](https://nestjs.com/) for types and conventional structure.
 
 > About how much time did you spend on the project?
 
